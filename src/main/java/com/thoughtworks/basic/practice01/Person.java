@@ -19,7 +19,14 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public String introduce(){
-        return "My name is Tom. I am 21 years old.";
+
+        return "My name is "+getName()+". I am "+getAge()+" years old.";
     }
 }

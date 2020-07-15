@@ -16,7 +16,21 @@ My name is Matt. I am 30 years old. I am a Teacher.
 public class Student extends Person {
     private int klass;
 
+    public Student(String name, int age, int klass) {
+        super(name, age);
+        this.klass = klass;
+    }
+
+    public int getKlass() {
+        return klass;
+    }
+
+    public void setKlass(int klass) {
+        this.klass = klass;
+    }
+
     public String introduce(){
-        return "My name is Tom. I am 21 years old. I am a Student of Class 2.";
+
+        return "My name is "+getName()+". I am "+getAge()+" years old. I am a Student of Class "+getKlass()+".";
     }
 }

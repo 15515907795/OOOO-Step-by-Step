@@ -11,7 +11,7 @@ public class PersonTest02 {
     @Test
     public void person01_should_return_string() {
         //given
-        Person person=new Person();
+        Person person=new Person("Tom",21);
 
         //when
         String actual = person.introduce();
@@ -22,7 +22,7 @@ public class PersonTest02 {
     @Test
     public void person02_should_return_student_string() {
         //given
-        Student st=new Student();
+        Student st=new Student("Tom",21,2);
 
         //when
         String actual = st.introduce();
@@ -33,7 +33,7 @@ public class PersonTest02 {
     @Test
     public void person02_should_return_teacher_string() {
         //given
-        Teacher th=new Teacher();
+        Teacher th=new Teacher("Matt",30,"Teacher");
 
         //when
         String actual = th.introduce();

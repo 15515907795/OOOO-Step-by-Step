@@ -11,7 +11,7 @@ public class PersonTest01 {
     @Test
     public void person01_should_return_string() {
         //given
-        Person person=new Person();
+        Person person=new Person("Tom",21);
 
         //when
         String actual = person.introduce();
